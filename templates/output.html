@@ -1,0 +1,13 @@
+
+{% if text %}
+  <h1>Hello !</h1>
+<input onclick='audioPlay()' type='button' value='🔊 Play' />
+{% endif %}
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<script type="text/javascript">
+	function audioPlay() {
+		var string = '{{ text }}';
+		responsiveVoice.speak(string, "Hindi Female");
+		}
+	
+</script>
